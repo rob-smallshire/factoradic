@@ -11,7 +11,7 @@ For example, the number 1337 can be represented as:
 with coefficients 1 5 0 2 2 1 0. This is the unqiue factoradic
 representation of decimal 1337.
 
-Factoradic number have uses in combinatorics, particularly in the
+Factoradic numbers have uses in combinatorics, particularly in the
 numbering of permutations. This ``factoradic`` library is useful for
 converting to and from factoradic number representations both in
 Python and from the command-line.
@@ -101,5 +101,5 @@ The see the results as a math expression, specify the ``--expression`` flag::
 To convert from factoradic representation use the ``to-integer`` subcommand,
 specifying the coefficients from least-significant to most-significant::
 
-  $ python -m factoradic to-integer 0 1 0 0 2 2 2
+  $ factoradic to-integer 0 1 0 0 2 2 2
   1729
