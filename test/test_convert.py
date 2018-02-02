@@ -3,6 +3,7 @@ from numbers import Integral
 
 from hypothesis import given, assume
 from hypothesis.strategies import integers, floats
+from math import factorial
 from pytest import raises
 
 from factoradic.convert import from_factoradic, to_factoradic
@@ -63,11 +64,26 @@ def test_non_integers_raise_value_error(n):
     with raises(ValueError):
         to_factoradic(n)
 
+
 def test_nan_raises_value_error():
     with raises(ValueError):
         to_factoradic(float('nan'))
+
 
 def test_infinity_raises_value_error():
     with raises(ValueError):
         to_factoradic(float('Inf'))
 
+
+def test_empty_coefficients_raises_value_error():
+    with raises(ValueError):
+        from_factoradic([])
+
+
+def test_out_of_range_coefficients_raise_value_error():
+    with raises(ValueError):
+        from_factoradic([1])
+
+@given(m=integers(min_value=1, max_value=100))
+def test_max_factoradic_is_one_less_than_factorial(m):
+    assert from_factoradic(range(m)) == factorial(m) - 1
