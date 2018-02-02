@@ -64,6 +64,7 @@ the coefficient at index 0 is always 0.
 
 To convert from factoradic use ``from_factoradic()``::
 
+  >>> from factoradic import from_factoradic
   >>> factoradic.from_factoradic([0, 1, 2, 2, 0, 5, 1])
   1337
 
