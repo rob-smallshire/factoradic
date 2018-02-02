@@ -37,7 +37,7 @@ The ``factoradic`` package is available on the Python Package Index (PyPI):
 
 The package supports Python 3 only. To install::
 
-  $ pip install renard
+  $ pip install factoradic
 
 Python Interface
 ----------------
