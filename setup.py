@@ -44,7 +44,7 @@ setup(
     url='https://github.com/rob-smallshire/factoradic',
 
     # Author details
-    author='Sixty North AS',
+    author='Robert Smallshire',
     author_email='rob@sixty-north.com',
 
     # Choose your license
