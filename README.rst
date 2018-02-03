@@ -8,7 +8,7 @@ For example, the number 1337 can be represented as:
 
     1*6! + 5*5! + 0*4! + 2*3! + 2*2! + 1*1! + 0*0!
 
-with coefficients 1 5 0 2 2 1 0. This is the unqiue factoradic
+with coefficients 1 5 0 2 2 1 0. This is the unique factoradic
 representation of decimal 1337.
 
 Factoradic numbers have uses in combinatorics, particularly in the
